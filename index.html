@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Loopstudios landing page</title>
+
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/estilo.css">
+  <!-- RESPONSIVO -->
+  <link rel="stylesheet" href="css/responsivo.css">
+
+  <!-- ICONES -->
+  <link rel="stylesheet" href="https://i.icomoon.io/public/temp/dbae5b182e/UntitledProject/style-svg.css">
+  <script defer src="https://i.icomoon.io/public/temp/dbae5b182e/UntitledProject/svgxuse.js"></script>
+</head>
+<body>
+  <script>
+    let show = true;
+    function menu_toggle() {
+      const menuT = document.getElementById("NavbarContainer");
+      document.body.style.overflow = show ? 'hidden' : 'initial';
+      menuT.classList.toggle('on', show);
+      show = !show;
+    }
+  </script>
+  <!-- HEADER -->
+  <div class="background-header">
+    <header>
+      <div id="NavbarContainer" class="navbar">
+        <div class="container">
+          <div class="logo">
+            <a href="">
+              <img src="images/logo.svg" alt="">
+            </a>
+          </div>
+          <div>
+            <!-- BARAR DE NAVEGAÇÃO  -->
+            <nav class="nav-menu">
+              <ul>
+                <li>
+                  <a href="">About</a>
+                  <div class="linha"></div>
+                </li>
+                <li>
+                  <a href="">Careers</a>
+                  <div class="linha"></div>
+                </li>
+                <li>
+                  <a href="">Events</a>
+                  <div class="linha"></div>
+                </li>
+                <li>
+                  <a href="">Products</a>
+                  <div class="linha"></div>
+                </li>
+                <li>
+                  <a href="">Support</a>
+                  <div class="linha"></div>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <!-- Menu Toglle -->
+          <div class="menu-toggle" onclick="menu_toggle()">
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="three"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- CONTEINER HEADER  -->
+    <div class="container-header container">
+      <h1>Immersive<br>experiences<br>that deliver</h1>
+    </div>
+  </div>
+  <!-- INTERATIVE -->
+  <main>
+    <div class="container container-interactive">
+      <img src="images/desktop/image-interactive.jpg" alt="">
+      <div>
+        <h2>The leader in<br>interactive VR</h2>
+        <p>
+          Founded in 2011, Loopstudios has been producing world-class virtual reality 
+          projects for some of the best companies around the globe. Our award-winning 
+          creations have transformed businesses through digital experiences that bind 
+          to their brand.
+        </p>
+      </div>
+    </div>
+  </main>
+  <!-- OUR CREATIONS -->
+  <section class="container">
+    <div class="creations-menu">
+      <h3>Our creations</h3>
+      <div>
+        <a href="">See all</a>
+      </div>
+      <div class="creations">
+        <div class="img-box">
+          <div></div>
+          <img src="images/desktop/image-deep-earth.jpg" alt="">
+          <img src="images/mobile/image-deep-earth.jpg" alt="">
+          <span>Deep<br>earth</span>
+        </div>
+        <div class="img-box">
+          <div></div>
+          <img src="images/desktop/image-night-arcade.jpg" alt="">
+          <img src="images/mobile/image-night-arcade.jpg" alt="">
+          <span>Night<br>arcade</span>
+        </div>
+        <div class="img-box">
+          <div></div>
+          <img src="images/desktop/image-soccer-team.jpg" alt="">
+          <img src="images/mobile/image-soccer-team.jpg" alt="">
+          <span>Soccer<br>team VR</span>
+        </div>
+        <div class="img-box">
+          <div></div>
+          <img src="images/desktop/image-grid.jpg" alt="">
+          <img src="images/mobile/image-grid.jpg" alt="">
+          <span>The<br>grid</span>
+        </div>
+        <div class="img-box">
+          <div></div>
+          <img src="images/desktop/image-from-above.jpg" alt="">
+          <img src="images/mobile/image-from-above.jpg" alt="">
+          <span> From up<br>above VR</span>
+        </div>
+        <div class="img-box">
+          <div></div>
+          <img src="images/desktop/image-pocket-borealis.jpg" alt="">
+          <img src="images/mobile/image-pocket-borealis.jpg" alt="">
+          <span>Pocket<br>borealis</span>
+        </div>
+        <div class="img-box">
+          <div></div>
+          <img src="images/desktop/image-curiosity.jpg" alt="">
+          <img src="images/mobile/image-curiosity.jpg" alt="">
+          <span>The<br>curiosity</span>
+        </div>
+        <div class="img-box">
+          <div></div>
+          <img src="images/desktop/image-fisheye.jpg" alt="">
+          <img src="images/mobile/image-fisheye.jpg" alt="">
+          <span>Make it<br>fisheye</span>
+        </div>
+      </div>
+    </div>
+    
+  </section>
+  <!-- FOOTER -->
+  <footer>
+    <div>
+      <!-- PART 1 -->
+      <div class="container footer-part1">
+        <img src="images/logo.svg" alt="">
+        <div>
+          <a href="">
+            <img src="images/icon-facebook.svg" alt="">
+            <div class="linha"></div>
+          </a>
+          <a href="">
+            <img src="images/icon-twitter.svg" alt="">
+            <div class="linha"></div>
+          </a>
+          <a href="">
+            <img src="images/icon-pinterest.svg" alt="">
+            <div class="linha"></div>
+          </a>
+          <a href="">
+            <img src="images/icon-instagram.svg" alt="">
+            <div class="linha"></div>
+          </a>
+        </div>
+      </div>
+      <!-- 2 PART -->
+      <div class="container footer-part2">
+        <nav class="nav-menu">
+          <ul>
+            <li>
+              <a href="">About</a>
+              <div class="linha"></div>
+            </li>
+            <li>
+              <a href="">Careers</a>
+              <div class="linha"></div>
+            </li>
+            <li>
+              <a href="">Events</a>
+              <div class="linha"></div>
+            </li>
+            <li>
+              <a href="">Products</a>
+              <div class="linha"></div>
+            </li>
+            <li>
+              <a href="">Support</a>
+              <div class="linha"></div>
+            </li>
+          </ul>
+        </nav>
+        <p>
+          © 2021 Loopstudios. All rights reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
